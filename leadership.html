@@ -48,7 +48,7 @@
         <div class="container newback bg-light">
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-top: 20px;">
-                    <h1 class="section-header-text">Meet PSP's 2024-2025 Leadership Team!
+                    <h1 class="section-header-text">Meet PSP's 2025-2026 Leadership Team!
                     </h1>
                     <hr style="opacity: 90%; width:80%; margin-inline-start: auto; margin-inline-end: auto;">
                     <p class="section-text">These are the amazing, determined individuals who make up our leadership team! Each of them are tasked with vital responsibilities that not only sustain our chapter’s vision and mission, but also lead by example with their perseverance and dedication.</p>
@@ -64,16 +64,15 @@
         </div>
     </div>
     <div class="w3-row-padding w3-padding-64 w3-container">
-        <div class="officers-row">
+        <div class="officers-row" id="executive-board">
             <!-- Officer 1 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/anna_martinez.jpg" alt="Anna">
-                    <div class="officers-container">
-                        <h2>Anna Martinez</h2>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Mari.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Marialaura Salinas</h2>
                         <p class="officers-title">President</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
@@ -81,69 +80,83 @@
 
             <!-- Officer 2 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/john_doe.jpg" alt="John">
-                    <div class="officers-container">
-                        <h2>John Doe</h2>
-                        <p class="officers-title">Vice President</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Fidel.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Fidel Zapata</h2>
+                        <p class="officers-title">Vice President Internal</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 3 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/jane_smith.jpg" alt="Jane">
-                    <div class="officers-container">
-                        <h2>Jane Smith</h2>
-                        <p class="officers-title">Secretary</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Gani.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Ganiat Ogidan</h2>
+                        <p class="officers-title">Vice President External</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 4 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/mike_johnson.jpg" alt="Mike">
-                    <div class="officers-container">
-                        <h2>Mike Johnson</h2>
-                        <p class="officers-title">Treasurer</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Audrey.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Audrey Calderon</h2>
+                        <p class="officers-title">Secretary</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 5 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/sarah_lee.jpg" alt="Sarah">
-                    <div class="officers-container">
-                        <h2>Sarah Lee</h2>
-                        <p class="officers-title">Event Coordinator</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Glenda.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Glenda Diaz</h2>
+                        <p class="officers-title">Academic Excellence Coordinator</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 6 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/david_brown.jpg" alt="David">
-                    <div class="officers-container">
-                        <h2>David Brown</h2>
-                        <p class="officers-title">Public Relations</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Chris.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Christopher Medrano</h2>
+                        <p class="officers-title">Treasurer</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            const executiveRow = document.getElementById('executive-board');
+            var executiveDiv = $('#executive-board');
+            const executiveThreshold = executiveDiv.offset().top - executiveDiv.height()*0.35; // vertical scroll threshold in px
+            window.addEventListener('scroll', () => {
+              const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+              if (scrollY > executiveThreshold) {
+                if (!executiveRow.classList.contains('fly-in')) {
+                    executiveRow.classList.add('fly-in');
+                    executiveRow.classList.remove('fly-out');
+                }
+              } else {
+                if (!executiveRow.classList.contains('fly-out')) {
+                    executiveRow.classList.add('fly-out');
+                    executiveRow.classList.remove('fly-in');
+                }
+              }
+            });
+        </script>
     </div>
 </div>
 
@@ -156,85 +169,98 @@
         </div>
     </div>
     <div class="w3-row-padding w3-padding-64 w3-container">
-        <div class="officers-row">
+        <div class="officers-row-alt" id="internal-board">
             <!-- Officer 1 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/anna_martinez.jpg" alt="Anna">
-                    <div class="officers-container">
-                        <h2>Anna Martinez</h2>
-                        <p class="officers-title">President</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Ashley.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Ashley Flores</h2>
+                        <p class="officers-title">First Year In Pi Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 2 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/john_doe.jpg" alt="John">
-                    <div class="officers-container">
-                        <h2>John Doe</h2>
-                        <p class="officers-title">Vice President</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Javi.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Javier Sosa</h2>
+                        <p class="officers-title">Social Co-Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 3 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/jane_smith.jpg" alt="Jane">
-                    <div class="officers-container">
-                        <h2>Jane Smith</h2>
-                        <p class="officers-title">Secretary</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Jonathan.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Jonathan Alvarado</h2>
+                        <p class="officers-title">Social Co-Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 4 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/mike_johnson.jpg" alt="Mike">
-                    <div class="officers-container">
-                        <h2>Mike Johnson</h2>
-                        <p class="officers-title">Treasurer</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Alexis.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Alexis Rodriguez</h2>
+                        <p class="officers-title">Community Service Co-Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 5 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/sarah_lee.jpg" alt="Sarah">
-                    <div class="officers-container">
-                        <h2>Sarah Lee</h2>
-                        <p class="officers-title">Event Coordinator</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Aileen.png');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Aileen Menjivar</h2>
+                        <p class="officers-title">Community Service Co-Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 6 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/david_brown.jpg" alt="David">
-                    <div class="officers-container">
-                        <h2>David Brown</h2>
-                        <p class="officers-title">Public Relations</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Sunjae.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Sunjae Lee</h2>
+                        <p class="officers-title">Athletics Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            const internalRow = document.getElementById('internal-board');
+            var internalDiv = $('#internal-board');
+            const internalThreshold = internalDiv.offset().top - internalDiv.height()*0.35; // vertical scroll threshold in px
+            window.addEventListener('scroll', () => {
+              const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+              if (scrollY > internalThreshold) {
+                if (!internalRow.classList.contains('fly-in')) {
+                    internalRow.classList.add('fly-in');
+                    internalRow.classList.remove('fly-out');
+                }
+              } else {
+                if (!internalRow.classList.contains('fly-out')) {
+                    internalRow.classList.add('fly-out');
+                    internalRow.classList.remove('fly-in');
+                }
+              }
+            });
+        </script>
     </div>
 </div>
 
@@ -242,92 +268,161 @@
 <div class="container newback bg-light" style="margin-bottom: 25px;">
     <div class="row">
         <div class="col-md-12 center-vertical" style="padding-top: 15px;">
-            <h1 class="section-subheader-text">Executive Board</h1>
+            <h1 class="section-subheader-text">External Board</h1>
         </div>
     </div>
     <div class="w3-row-padding w3-padding-64 w3-container">
-        <div class="officers-row">
+        <div class="officers-row" id="external-board">
             <!-- Officer 1 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/anna_martinez.jpg" alt="Anna">
-                    <div class="officers-container">
-                        <h2>Anna Martinez</h2>
-                        <p class="officers-title">President</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Emilie.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Emilie Baillo</h2>
+                        <p class="officers-title">Corporate Liason Co-Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 2 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/john_doe.jpg" alt="John">
-                    <div class="officers-container">
-                        <h2>John Doe</h2>
-                        <p class="officers-title">Vice President</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Tommy.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Tommy Thompson</h2>
+                        <p class="officers-title">Corporate Liason Co-Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 3 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/jane_smith.jpg" alt="Jane">
-                    <div class="officers-container">
-                        <h2>Jane Smith</h2>
-                        <p class="officers-title">Secretary</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Dhara.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Dhara Purohit</h2>
+                        <p class="officers-title">Cockrell Relations Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 4 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/mike_johnson.jpg" alt="Mike">
-                    <div class="officers-container">
-                        <h2>Mike Johnson</h2>
-                        <p class="officers-title">Treasurer</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Jessica.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Jessica Ramos</h2>
+                        <p class="officers-title">Recruitment & Retention Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
             <!-- Officer 5 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/sarah_lee.jpg" alt="Sarah">
-                    <div class="officers-container">
-                        <h2>Sarah Lee</h2>
-                        <p class="officers-title">Event Coordinator</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Kaylin.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Kaylin Troung</h2>
+                        <p class="officers-title">Publicity Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
 
-            <!-- Officer 6 -->
+            <!-- Officer 4 -->
             <div class="officers-column">
-                <div class="officers-card">
-                    <img src="assets/images/officers_Photos/david_brown.jpg" alt="David">
-                    <div class="officers-container">
-                        <h2>David Brown</h2>
-                        <p class="officers-title">Public Relations</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>example@example.com</p>
+                <a href="https://www.linkedin.com/in/miguel-h-ece/" style="text-decoration: none;">
+                    <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Miguel.jpg');">
+                        <div class="officers-card-text">
+                            <h2 class="officer-name">Miguel Hernandez</h2>
+                            <p class="officers-title">Media Chair</p>
+                            <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                            <!-- <p>example@example.com</p> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <script>
+            const externalRow = document.getElementById('external-board');
+            var externalDiv = $('#external-board');
+            const externalThreshold = externalDiv.offset().top - externalDiv.height()*0.35; // vertical scroll threshold in px
+            window.addEventListener('scroll', () => {
+              const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+              if (scrollY > externalThreshold) {
+                if (!externalRow.classList.contains('fly-in')) {
+                    externalRow.classList.add('fly-in');
+                    externalRow.classList.remove('fly-out');
+                }
+              } else {
+                if (!externalRow.classList.contains('fly-out')) {
+                    externalRow.classList.add('fly-out');
+                    externalRow.classList.remove('fly-in');
+                }
+              }
+            });
+        </script>
+    </div>
+</div>
+
+<!--academic board-->
+<div class="container newback bg-light" style="margin-bottom: 25px;">
+    <div class="row">
+        <div class="col-md-12 center-vertical" style="padding-top: 15px;">
+            <h1 class="section-subheader-text">Academic Board</h1>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="officers-row-alt" id="academic-board">
+            <!-- Officer 1 -->
+            <div class="officers-column">
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Samantha.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Samantha Garcia</h2>
+                        <p class="officers-title">Academic Health Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Officer 2 -->
+            <div class="officers-column">
+                <div class="officers-card" style="background-image: url('assets/images/leadership_card_images/Johan.jpg');">
+                    <div class="officers-card-text">
+                        <h2 class="officer-name">Johan Fuentes</h2>
+                        <p class="officers-title">Academic Community Chair</p>
+                        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                        <!-- <p>example@example.com</p> -->
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            const academicRow = document.getElementById('academic-board');
+            var academicDiv = $('#academic-board');
+            const academicThreshold = academicDiv.offset().top - academicDiv.height()*0.95; // vertical scroll threshold in px
+            window.addEventListener('scroll', () => {
+              const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+              if (scrollY > academicThreshold) {
+                if (!academicRow.classList.contains('fly-in')) {
+                    academicRow.classList.add('fly-in');
+                    academicRow.classList.remove('fly-out');
+                }
+              } else {
+                if (!academicRow.classList.contains('fly-out')) {
+                    academicRow.classList.add('fly-out');
+                    academicRow.classList.remove('fly-in');
+                }
+              }
+            });
+        </script>
     </div>
 </div>
-
 
 
         <!-- Footer Container -->
@@ -335,8 +430,8 @@
             <div class="row">
                 <div class="col-md-4 footer-info" style="text-align: center;">
                     <h4>Contact Us</h4>
-                    <p>Primary Email: <a href="mailto:shpe@engr.utexas.edu" style="color: #BF5700">shpe.ut.president@gmail.com</a></p>
-                    <p>Corporate Email: <a href="mailto:utshpe@gmail.com" style="color: #BF5700">utshpe@gmail.com</a></p>
+                    <p>Primary Email: <a href="mailto:utexas.pisigmapi@gmail.com" style="color: #BF5700">utexas.pisigmapi@gmail.com</a></p>
+                    <!-- <p>Corporate Email: <a href="mailto:utexas.pisigmapi@gmail.com" style="color: #BF5700">utexas.pisigmapi@gmail.com</a></p> -->
                 </div>
                 <div class="col-md-4 footer-info" style="text-align: center;">
                     <h4>Follow us on Social Media</h4>
@@ -348,8 +443,8 @@
                     <a href="https://github.com/UTSHPE"><i class="fa-brands fa-github-square social-logo"></i></a>
                 </div>
                 <div class="col-md-4 footer-info" style="text-align: center;">
-                    <h4>Find more of UT-SHPE at our</h4>
-                    <h4><a href="https://linktr.ee/UTSHPE" style="color: #BF5700">Linktree</a></h4>
+                    <h4>Find more of UT-PSP at our</h4>
+                    <h4><a href="https://linktr.ee/PiSigmaPi" style="color: #BF5700">Linktree</a></h4>
                 </div>
                 <div class="col-md-12" style="padding: 15px">
                     <hr style="opacity: 100%; width:90%; margin-inline-start: auto; margin-inline-end: auto;">
